@@ -3,13 +3,31 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name    = "viewport"
+      content = "width=device-width, initial-scale=1.0, user-scalable=yes"
+  >
   <link rel="stylesheet" href="main.css"/>
   <title>Hello World 01</title>
 </head>
 
 <body>
-  <h1>Hello, World!</h1>
-  <p>Welcome to Web Programming!</p>
+  <section id="section_form">
+    <h1>Hello, Stranger!</h1>
+    <form>
+      <div>
+        <label for="input_name">What's your name?</label>
+        <input id="input_name" autofocus/>
+      </div>
+      <div>
+        <input id="button_reset"  type="reset"  value="Reset"/>
+        <input id="button_submit" type="button" value="Say hello"/>
+      </div>
+    </form>
+  </section>
+  <section id="section_hello" class="hidden">
+    <h1 id="heading_hello">Hello, ...!</h1>
+    <p>Welcome to Web Programming!</p>
+  </section>
 </body>
 
 </html>
